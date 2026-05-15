@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Dairy Shop Kovilpatti – Fresh, Pure & Premium Dairy Products delivered to your doorstep. Milk, Curd, Butter, Ghee, Paneer and more." />
+  <title>Dairy Shop – Fresh & Pure | Kovilpatti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">🥛</span>
+        <div>
+          <span class="logo-name">Dairy Shop</span>
+          <span class="logo-tagline">Kovilpatti</span>
+        </div>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#icecream" class="nav-link">🍦 Ice Cream</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="tel:6382912011" class="nav-cta" id="navCallBtn">📞 Call Now</a>
+      <button class="cart-nav-btn" id="cartNavBtn" aria-label="View Cart">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <img src="hero.png" alt="Fresh dairy products displayed on a wooden table" class="hero-bg-img" />
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Farm Fresh · Kovilpatti
+      </div>
+      <h1 class="hero-title">
+        Pure Dairy,<br />
+        <span class="gradient-text">Pure Goodness</span>
+      </h1>
+      <p class="hero-subtitle">
+        Experience the richness of farm-fresh dairy products delivered straight to your home.
+        Quality you can taste, freshness you can trust.
+      </p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-primary" id="heroShopBtn">Explore Products</a>
+        <a href="tel:6382912011" class="btn btn-outline" id="heroCallBtn">📞 6382912011</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Years of Trust</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Natural & Pure</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" id="heroScroll">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+  <!-- ========== ICE CREAM MENU ========== -->
+  <section class="icecream-section" id="icecream">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Special Menu</div>
+        <h2 class="section-title">🍦 Ice Cream <span class="gradient-text">Flavours</span></h2>
+        <p class="section-subtitle">Fresh, creamy hand-scooped ice cream made with pure dairy. One scoop, pure joy!</p>
+      </div>
+
+      <div class="icecream-grid">
+
+        <div class="icecream-card" id="icChocolate">
+          <div class="icecream-emoji-wrap choco-bg">
+            <span class="icecream-emoji">🍫</span>
+          </div>
+          <div class="icecream-info">
+            <h3>Chocolate</h3>
+            <p>Rich, velvety dark chocolate bliss</p>
+            <div class="icecream-price-row">
+              <span class="scoop-label">1 Scoop</span>
+              <span class="icecream-price">₹50</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Chocolate Ice Cream (1 Scoop) - ₹50" id="cartIcChoco">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="icecream-card" id="icVanilla">
+          <div class="icecream-emoji-wrap vanilla-bg">
+            <span class="icecream-emoji">🌼</span>
+          </div>
+          <div class="icecream-info">
+            <h3>Vanilla</h3>
+            <p>Classic, smooth & creamy pure vanilla</p>
+            <div class="icecream-price-row">
+              <span class="scoop-label">1 Scoop</span>
+              <span class="icecream-price">₹60</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Vanilla Ice Cream (1 Scoop) - ₹60" id="cartIcVanilla">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="icecream-card" id="icStrawberry">
+          <div class="icecream-emoji-wrap strawberry-bg">
+            <span class="icecream-emoji">🍓</span>
+          </div>
+          <div class="icecream-info">
+            <h3>Strawberry</h3>
+            <p>Fresh, fruity & naturally sweet strawberry</p>
+            <div class="icecream-price-row">
+              <span class="scoop-label">1 Scoop</span>
+              <span class="icecream-price">₹70</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Strawberry Ice Cream (1 Scoop) - ₹70" id="cartIcStrawberry">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="icecream-card" id="icButterscotch">
+          <div class="icecream-emoji-wrap butterscotch-bg">
+            <span class="icecream-emoji">🧡</span>
+          </div>
+          <div class="icecream-info">
+            <h3>Butterscotch</h3>
+            <p>Warm, caramel-rich butterscotch delight</p>
+            <div class="icecream-price-row">
+              <span class="scoop-label">1 Scoop</span>
+              <span class="icecream-price">₹90</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Butterscotch Ice Cream (1 Scoop) - ₹90" id="cartIcButterscotch">🛒 Add to Order</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Ice Cream Image -->
+      <div class="icecream-img-wrap">
+        <img src="icecream.png" alt="Chocolate, Vanilla, Strawberry and Butterscotch ice cream scoops" class="icecream-banner-img" />
+        <div class="icecream-img-badge">🍦 Fresh Scoops Daily!</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE STRIP ========== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>🥛 Fresh Milk</span>
+      <span>🧈 Creamy Butter</span>
+      <span>🫙 Pure Ghee</span>
+      <span>🥛 Curd & Yogurt</span>
+      <span>🧀 Farm Paneer</span>
+      <span>🍦 Rich Cream</span>
+      <span>🥛 Buttermilk</span>
+      <span>🧈 Lassi</span>
+      <span>🥛 Fresh Milk</span>
+      <span>🧈 Creamy Butter</span>
+      <span>🫙 Pure Ghee</span>
+      <span>🥛 Curd & Yogurt</span>
+      <span>🧀 Farm Paneer</span>
+      <span>🍦 Rich Cream</span>
+      <span>🥛 Buttermilk</span>
+      <span>🧈 Lassi</span>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img src="about.png" alt="Happy cows at sunrise on a lush green farm" class="about-img" />
+          <div class="about-card floating-card">
+            <span class="card-icon">🌿</span>
+            <div>
+              <strong>100% Natural</strong>
+              <p>No preservatives, no additives</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">From the Farm to <span class="gradient-text">Your Table</span></h2>
+          <p class="about-text">
+            Welcome to <strong>Dairy Shop</strong> — Kovilpatti's most trusted name for fresh, pure dairy products.
+            For over a decade, we have been sourcing the finest dairy produce directly from local farms and
+            delivering it to your doorstep with care, hygiene, and love.
+          </p>
+          <p class="about-text">
+            We believe that great dairy starts with happy, healthy cows and ethical farming practices.
+            Every product you receive carries our promise of freshness, purity, and nutritional goodness.
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <span>Sourced from trusted local farms</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <span>Delivered fresh every morning</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <span>No artificial preservatives</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <span>Hygienically packaged products</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS ========== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Our Products</div>
+        <h2 class="section-title">Premium Dairy <span class="gradient-text">Collection</span></h2>
+        <p class="section-subtitle">
+          Handpicked, farm-fresh dairy products crafted for taste, nutrition, and purity.
+        </p>
+      </div>
+
+      <div class="product-filters" id="productFilters">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All Products</button>
+        <button class="filter-btn" data-filter="milk" id="filterMilk">Milk & Cream</button>
+        <button class="filter-btn" data-filter="dairy" id="filterDairy">Curd & Paneer</button>
+        <button class="filter-btn" data-filter="fat" id="filterFat">Butter & Ghee</button>
+        <button class="filter-btn" data-filter="drinks" id="filterDrinks">Drinks</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card" data-category="milk" id="prodMilk">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🥛</div>
+            <div class="product-badge">Best Seller</div>
+          </div>
+          <div class="product-info">
+            <h3>Fresh Full Cream Milk</h3>
+            <p>Farm-fresh, pasteurized full cream milk rich in calcium and protein.</p>
+            <div class="product-tags">
+              <span class="tag">Pasteurized</span>
+              <span class="tag">Daily Fresh</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Fresh Full Cream Milk" id="cartMilk">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="dairy" id="prodCurd">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🍶</div>
+          </div>
+          <div class="product-info">
+            <h3>Thick Set Curd</h3>
+            <p>Creamy, naturally set curd made from pure full-cream milk — perfect for every meal.</p>
+            <div class="product-tags">
+              <span class="tag">Probiotic</span>
+              <span class="tag">Natural</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Thick Set Curd" id="cartCurd">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="fat" id="prodButter">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🧈</div>
+            <div class="product-badge new-badge">Popular</div>
+          </div>
+          <div class="product-info">
+            <h3>Artisan White Butter</h3>
+            <p>Hand-churned, pure white butter with a rich, traditional flavor you'll love.</p>
+            <div class="product-tags">
+              <span class="tag">Hand-Churned</span>
+              <span class="tag">No Additives</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Artisan White Butter" id="cartButter">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="fat" id="prodGhee">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🫙</div>
+          </div>
+          <div class="product-info">
+            <h3>Pure Desi Ghee</h3>
+            <p>Golden, aromatic A2 desi ghee prepared using the traditional bilona method.</p>
+            <div class="product-tags">
+              <span class="tag">A2 Ghee</span>
+              <span class="tag">Bilona Method</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Pure Desi Ghee" id="cartGhee">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="dairy" id="prodPaneer">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🧀</div>
+            <div class="product-badge">Fresh Daily</div>
+          </div>
+          <div class="product-info">
+            <h3>Soft Farm Paneer</h3>
+            <p>Fresh, soft paneer made daily from pure full-cream milk. Perfect for curries and snacks.</p>
+            <div class="product-tags">
+              <span class="tag">High Protein</span>
+              <span class="tag">Made Daily</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Soft Farm Paneer" id="cartPaneer">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="milk" id="prodCream">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🍦</div>
+          </div>
+          <div class="product-info">
+            <h3>Fresh Cream</h3>
+            <p>Smooth, luscious fresh cream with natural richness — ideal for cooking and desserts.</p>
+            <div class="product-tags">
+              <span class="tag">Smooth</span>
+              <span class="tag">Rich</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Fresh Cream" id="cartCream">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="drinks" id="prodLassi">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🥤</div>
+            <div class="product-badge new-badge">New</div>
+          </div>
+          <div class="product-info">
+            <h3>Sweet & Salted Lassi</h3>
+            <p>Refreshing, chilled lassi made from thick curd — available in sweet and salted flavors.</p>
+            <div class="product-tags">
+              <span class="tag">Chilled</span>
+              <span class="tag">2 Flavors</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Sweet &amp; Salted Lassi" id="cartLassi">🛒 Add to
+              Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="drinks" id="prodButtermilk">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🫗</div>
+          </div>
+          <div class="product-info">
+            <h3>Spiced Buttermilk</h3>
+            <p>Light, digestive-friendly spiced buttermilk — the perfect summer thirst quencher.</p>
+            <div class="product-tags">
+              <span class="tag">Refreshing</span>
+              <span class="tag">Digestive</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Spiced Buttermilk" id="cartButtermilk">🛒 Add to
+              Order</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Why Choose Us</div>
+        <h2 class="section-title">The Dairy Shop <span class="gradient-text">Difference</span></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" id="whyCard1">
+          <div class="why-icon">🌿</div>
+          <h3>100% Natural</h3>
+          <p>All our products are completely natural with zero artificial preservatives, colors, or flavors.</p>
+        </div>
+        <div class="why-card" id="whyCard2">
+          <div class="why-icon">⏰</div>
+          <h3>Daily Fresh Delivery</h3>
+          <p>Fresh products sourced every morning and delivered to your doorstep before sunrise.</p>
+        </div>
+        <div class="why-card" id="whyCard3">
+          <div class="why-icon">🏡</div>
+          <h3>Local Farmers</h3>
+          <p>We partner with local Kovilpatti farmers to ensure community support and product quality.</p>
+        </div>
+        <div class="why-card" id="whyCard4">
+          <div class="why-icon">🛡️</div>
+          <h3>Quality Tested</h3>
+          <p>Every batch goes through strict quality checks to meet the highest hygiene standards.</p>
+        </div>
+        <div class="why-card" id="whyCard5">
+          <div class="why-icon">💰</div>
+          <h3>Best Prices</h3>
+          <p>Premium quality at affordable prices — because good dairy should be accessible to all.</p>
+        </div>
+        <div class="why-card" id="whyCard6">
+          <div class="why-icon">❤️</div>
+          <h3>10+ Years of Trust</h3>
+          <p>Serving thousands of happy families in Kovilpatti and surrounding areas for over a decade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Customer Reviews</div>
+        <h2 class="section-title">What Our Customers <span class="gradient-text">Say</span></h2>
+      </div>
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card active" id="test1">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"The freshest milk I've ever tasted! You can literally smell the farm goodness. My
+            family has been buying from Dairy Shop for 3 years now."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">R</div>
+            <div>
+              <strong>Ravi Kumar</strong>
+              <span>Kovilpatti</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="test2">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Their paneer is absolutely divine — so soft and fresh! I stopped buying from
+            supermarkets entirely after discovering Dairy Shop."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">M</div>
+            <div>
+              <strong>Meena Sundar</strong>
+              <span>Kovilpatti</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="test3">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"The desi ghee is absolutely authentic. The aroma is incredible and it tastes just like
+            my grandmother used to make. Highly recommended!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <strong>Arjun Palani</strong>
+              <span>Kovilpatti</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="test4">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Incredible lassi! The sweetness and thickness are perfect. My kids love it every day.
+            Thank you Dairy Shop for making our mornings special!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">S</div>
+            <div>
+              <strong>Sangeetha Raj</strong>
+              <span>Kovilpatti</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots">
+        <span class="dot active" data-index="0" id="dot0"></span>
+        <span class="dot" data-index="1" id="dot1"></span>
+        <span class="dot" data-index="2" id="dot2"></span>
+        <span class="dot" data-index="3" id="dot3"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">Visit Us or <span class="gradient-text">Call Anytime</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card" id="contactPhone">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:6382912011">6382912011</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contactLocation">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Dairy Shop, Kovilpatti,<br />Tamil Nadu, India</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contactHours">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Shop Hours</h4>
+              <p>Mon – Sat: 6:00 AM – 9:00 PM<br />Sunday: 6:00 AM – 1:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contactWhatsapp">
+            <div class="contact-icon">💬</div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/916382912011" target="_blank" rel="noopener noreferrer">Chat with us</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <h3>Send us a Message</h3>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Ravi Kumar" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="9876543210" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us what you need..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width" id="formSubmitBtn">💬 Send via WhatsApp</button>
+            <div class="form-success" id="formSuccess">
+              ✅ Opening WhatsApp... We'll reply shortly!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-icon">🥛</span>
+            <div>
+              <span class="logo-name">Dairy Shop</span>
+              <span class="logo-tagline">Kovilpatti</span>
+            </div>
+          </div>
+          <p>Delivering farm-fresh dairy goodness to the homes of Kovilpatti — pure, natural, and trusted for over a
+            decade.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#products">Fresh Milk</a></li>
+            <li><a href="#products">Pure Ghee</a></li>
+            <li><a href="#products">Curd & Paneer</a></li>
+            <li><a href="#products">Butter & Cream</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📍 Kovilpatti, Tamil Nadu</p>
+          <p>📞 <a href="tel:6382912011">6382912011</a></p>
+          <p>🕐 6 AM – 9 PM (Mon–Sat)</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Dairy Shop, Kovilpatti. All Rights Reserved. | Made with ❤️ for fresh dairy lovers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/916382912011" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" id="whatsappFab"
+    aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16 0C7.163 0 0 7.163 0 16c0 2.822.737 5.47 2.027 7.774L0 32l8.476-2.002A15.94 15.94 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.006 22.392c-.337.947-1.966 1.814-2.71 1.927-.718.108-1.618.153-2.609-.164-.601-.195-1.373-.453-2.36-.888-4.15-1.81-6.862-5.997-7.07-6.278-.206-.28-1.68-2.235-1.68-4.262s1.063-3.027 1.44-3.44c.376-.412.822-.515 1.096-.515.275 0 .549.003.789.013.253.012.593-.096.928.708.337.815 1.144 2.81 1.245 3.013.1.205.167.443.033.715-.134.274-.2.443-.4.681-.2.24-.42.534-.599.717-.2.2-.408.416-.175.816.234.4 1.04 1.714 2.233 2.776 1.533 1.365 2.825 1.788 3.226 1.99.4.202.633.168.867-.1.234-.267 1.006-1.172 1.274-1.574.267-.4.534-.334.9-.2.367.134 2.334 1.1 2.734 1.3.4.2.666.3.766.467.1.168.1.967-.237 1.9z" />
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- Order Cart Panel -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-panel-header">
+      <h3>🛒 Your Order</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-panel-body">
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty-icon">🛒</div>
+        <p>Your cart is empty!<br />Add products to order via WhatsApp.</p>
+      </div>
+      <ul class="cart-items-list" id="cartItemsList"></ul>
+    </div>
+    <div class="cart-panel-footer" id="cartPanelFooter" style="display:none">
+      <div class="cart-name-group">
+        <label for="cartCustomerName">Your Name</label>
+        <input type="text" id="cartCustomerName" placeholder="e.g. Ravi Kumar" />
+      </div>
+      <div class="cart-name-group">
+        <label for="cartCustomerPhone">Your Phone</label>
+        <input type="tel" id="cartCustomerPhone" placeholder="e.g. 9876543210" />
+      </div>
+      <button class="cart-whatsapp-btn" id="cartWhatsappBtn">
+        <svg viewBox="0 0 32 32" width="20" height="20" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 0C7.163 0 0 7.163 0 16c0 2.822.737 5.47 2.027 7.774L0 32l8.476-2.002A15.94 15.94 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.006 22.392c-.337.947-1.966 1.814-2.71 1.927-.718.108-1.618.153-2.609-.164-.601-.195-1.373-.453-2.36-.888-4.15-1.81-6.862-5.997-7.07-6.278-.206-.28-1.68-2.235-1.68-4.262s1.063-3.027 1.44-3.44c.376-.412.822-.515 1.096-.515.275 0 .549.003.789.013.253.012.593-.096.928.708.337.815 1.144 2.81 1.245 3.013.1.205.167.443.033.715-.134.274-.2.443-.4.681-.2.24-.42.534-.599.717-.2.2-.408.416-.175.816.234.4 1.04 1.714 2.233 2.776 1.533 1.365 2.825 1.788 3.226 1.99.4.202.633.168.867-.1.234-.267 1.006-1.172 1.274-1.574.267-.4.534-.334.9-.2.367.134 2.334 1.1 2.734 1.3.4.2.666.3.766.467.1.168.1.967-.237 1.9z" />
+        </svg>
+        Order on WhatsApp
+      </button>
+      <button class="cart-clear-btn" id="cartClearBtn">🗑️ Clear Cart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
