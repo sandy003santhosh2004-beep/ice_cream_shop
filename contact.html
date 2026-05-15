@@ -28,13 +28,13 @@
         </div>
       </div>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link active">Home</a>
+        <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="products.html" class="nav-link">Products</a>
         <a href="icecream.html" class="nav-link">🍦 Ice Cream</a>
         <a href="why-us.html" class="nav-link">Why Us</a>
         <a href="testimonials.html" class="nav-link">Reviews</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
       </nav>
       <a href="tel:6382912011" class="nav-cta" id="navCallBtn">📞 Call Now</a>
       <button class="cart-nav-btn" id="cartNavBtn" aria-label="View Cart">
@@ -46,70 +46,68 @@
     </div>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero" id="home">
-    <div class="hero-bg-overlay"></div>
-    <img src="hero.png" alt="Fresh dairy products displayed on a wooden table" class="hero-bg-img" />
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span> Farm Fresh · Kovilpatti
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">Visit Us or <span class="gradient-text">Call Anytime</span></h2>
       </div>
-      <h1 class="hero-title">
-        Pure Dairy,<br />
-        <span class="gradient-text">Pure Goodness</span>
-      </h1>
-      <p class="hero-subtitle">
-        Experience the richness of farm-fresh dairy products delivered straight to your home.
-        Quality you can taste, freshness you can trust.
-      </p>
-      <div class="hero-buttons">
-        <a href="products.html" class="btn btn-primary" id="heroShopBtn">Explore Products</a>
-        <a href="tel:6382912011" class="btn btn-outline" id="heroCallBtn">📞 6382912011</a>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card" id="contactPhone">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:6382912011">6382912011</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contactLocation">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Dairy Shop, Kovilpatti,<br />Tamil Nadu, India</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contactHours">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Shop Hours</h4>
+              <p>Mon – Sat: 6:00 AM – 9:00 PM<br />Sunday: 6:00 AM – 1:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contactWhatsapp">
+            <div class="contact-icon">💬</div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/916382912011" target="_blank" rel="noopener noreferrer">Chat with us</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <h3>Send us a Message</h3>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Ravi Kumar" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="9876543210" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us what you need..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width" id="formSubmitBtn">💬 Send via WhatsApp</button>
+            <div class="form-success" id="formSuccess">
+              ✅ Opening WhatsApp... We'll reply shortly!
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">500+</span>
-          <span class="stat-label">Happy Customers</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">10+</span>
-          <span class="stat-label">Years of Trust</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Natural & Pure</span>
-        </div>
-      </div>
-    </div>
-    <div class="hero-scroll-indicator" id="heroScroll">
-      <span>Scroll Down</span>
-      <div class="scroll-arrow">↓</div>
     </div>
   </section>
-
-  <!-- ========== MARQUEE STRIP ========== -->
-  <div class="marquee-strip">
-    <div class="marquee-track">
-      <span>🥛 Fresh Milk</span>
-      <span>🧈 Creamy Butter</span>
-      <span>🫙 Pure Ghee</span>
-      <span>🥛 Curd & Yogurt</span>
-      <span>🧀 Farm Paneer</span>
-      <span>🍦 Rich Cream</span>
-      <span>🥛 Buttermilk</span>
-      <span>🧈 Lassi</span>
-      <span>🥛 Fresh Milk</span>
-      <span>🧈 Creamy Butter</span>
-      <span>🫙 Pure Ghee</span>
-      <span>🥛 Curd & Yogurt</span>
-      <span>🧀 Farm Paneer</span>
-      <span>🍦 Rich Cream</span>
-      <span>🥛 Buttermilk</span>
-      <span>🧈 Lassi</span>
-    </div>
-  </div>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">

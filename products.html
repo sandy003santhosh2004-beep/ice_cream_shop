@@ -28,9 +28,9 @@
         </div>
       </div>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link active">Home</a>
+        <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
-        <a href="products.html" class="nav-link">Products</a>
+        <a href="products.html" class="nav-link active">Products</a>
         <a href="icecream.html" class="nav-link">🍦 Ice Cream</a>
         <a href="why-us.html" class="nav-link">Why Us</a>
         <a href="testimonials.html" class="nav-link">Reviews</a>
@@ -46,70 +46,156 @@
     </div>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero" id="home">
-    <div class="hero-bg-overlay"></div>
-    <img src="hero.png" alt="Fresh dairy products displayed on a wooden table" class="hero-bg-img" />
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span> Farm Fresh · Kovilpatti
+  <!-- ========== PRODUCTS ========== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Our Products</div>
+        <h2 class="section-title">Premium Dairy <span class="gradient-text">Collection</span></h2>
+        <p class="section-subtitle">
+          Handpicked, farm-fresh dairy products crafted for taste, nutrition, and purity.
+        </p>
       </div>
-      <h1 class="hero-title">
-        Pure Dairy,<br />
-        <span class="gradient-text">Pure Goodness</span>
-      </h1>
-      <p class="hero-subtitle">
-        Experience the richness of farm-fresh dairy products delivered straight to your home.
-        Quality you can taste, freshness you can trust.
-      </p>
-      <div class="hero-buttons">
-        <a href="products.html" class="btn btn-primary" id="heroShopBtn">Explore Products</a>
-        <a href="tel:6382912011" class="btn btn-outline" id="heroCallBtn">📞 6382912011</a>
+
+      <div class="product-filters" id="productFilters">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All Products</button>
+        <button class="filter-btn" data-filter="milk" id="filterMilk">Milk & Cream</button>
+        <button class="filter-btn" data-filter="dairy" id="filterDairy">Curd & Paneer</button>
+        <button class="filter-btn" data-filter="fat" id="filterFat">Butter & Ghee</button>
+        <button class="filter-btn" data-filter="drinks" id="filterDrinks">Drinks</button>
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">500+</span>
-          <span class="stat-label">Happy Customers</span>
+
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card" data-category="milk" id="prodMilk">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🥛</div>
+            <div class="product-badge">Best Seller</div>
+          </div>
+          <div class="product-info">
+            <h3>Fresh Full Cream Milk</h3>
+            <p>Farm-fresh, pasteurized full cream milk rich in calcium and protein.</p>
+            <div class="product-tags">
+              <span class="tag">Pasteurized</span>
+              <span class="tag">Daily Fresh</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Fresh Full Cream Milk" id="cartMilk">🛒 Add to Order</button>
+          </div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">10+</span>
-          <span class="stat-label">Years of Trust</span>
+
+        <div class="product-card" data-category="dairy" id="prodCurd">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🍶</div>
+          </div>
+          <div class="product-info">
+            <h3>Thick Set Curd</h3>
+            <p>Creamy, naturally set curd made from pure full-cream milk — perfect for every meal.</p>
+            <div class="product-tags">
+              <span class="tag">Probiotic</span>
+              <span class="tag">Natural</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Thick Set Curd" id="cartCurd">🛒 Add to Order</button>
+          </div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Natural & Pure</span>
+
+        <div class="product-card" data-category="fat" id="prodButter">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🧈</div>
+            <div class="product-badge new-badge">Popular</div>
+          </div>
+          <div class="product-info">
+            <h3>Artisan White Butter</h3>
+            <p>Hand-churned, pure white butter with a rich, traditional flavor you'll love.</p>
+            <div class="product-tags">
+              <span class="tag">Hand-Churned</span>
+              <span class="tag">No Additives</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Artisan White Butter" id="cartButter">🛒 Add to Order</button>
+          </div>
         </div>
+
+        <div class="product-card" data-category="fat" id="prodGhee">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🫙</div>
+          </div>
+          <div class="product-info">
+            <h3>Pure Desi Ghee</h3>
+            <p>Golden, aromatic A2 desi ghee prepared using the traditional bilona method.</p>
+            <div class="product-tags">
+              <span class="tag">A2 Ghee</span>
+              <span class="tag">Bilona Method</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Pure Desi Ghee" id="cartGhee">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="dairy" id="prodPaneer">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🧀</div>
+            <div class="product-badge">Fresh Daily</div>
+          </div>
+          <div class="product-info">
+            <h3>Soft Farm Paneer</h3>
+            <p>Fresh, soft paneer made daily from pure full-cream milk. Perfect for curries and snacks.</p>
+            <div class="product-tags">
+              <span class="tag">High Protein</span>
+              <span class="tag">Made Daily</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Soft Farm Paneer" id="cartPaneer">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="milk" id="prodCream">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🍦</div>
+          </div>
+          <div class="product-info">
+            <h3>Fresh Cream</h3>
+            <p>Smooth, luscious fresh cream with natural richness — ideal for cooking and desserts.</p>
+            <div class="product-tags">
+              <span class="tag">Smooth</span>
+              <span class="tag">Rich</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Fresh Cream" id="cartCream">🛒 Add to Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="drinks" id="prodLassi">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🥤</div>
+            <div class="product-badge new-badge">New</div>
+          </div>
+          <div class="product-info">
+            <h3>Sweet & Salted Lassi</h3>
+            <p>Refreshing, chilled lassi made from thick curd — available in sweet and salted flavors.</p>
+            <div class="product-tags">
+              <span class="tag">Chilled</span>
+              <span class="tag">2 Flavors</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Sweet &amp; Salted Lassi" id="cartLassi">🛒 Add to
+              Order</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="drinks" id="prodButtermilk">
+          <div class="product-img-wrap">
+            <div class="product-emoji">🫗</div>
+          </div>
+          <div class="product-info">
+            <h3>Spiced Buttermilk</h3>
+            <p>Light, digestive-friendly spiced buttermilk — the perfect summer thirst quencher.</p>
+            <div class="product-tags">
+              <span class="tag">Refreshing</span>
+              <span class="tag">Digestive</span>
+            </div>
+            <button class="add-to-cart-btn" data-product="Spiced Buttermilk" id="cartButtermilk">🛒 Add to
+              Order</button>
+          </div>
+        </div>
+
       </div>
-    </div>
-    <div class="hero-scroll-indicator" id="heroScroll">
-      <span>Scroll Down</span>
-      <div class="scroll-arrow">↓</div>
     </div>
   </section>
-
-  <!-- ========== MARQUEE STRIP ========== -->
-  <div class="marquee-strip">
-    <div class="marquee-track">
-      <span>🥛 Fresh Milk</span>
-      <span>🧈 Creamy Butter</span>
-      <span>🫙 Pure Ghee</span>
-      <span>🥛 Curd & Yogurt</span>
-      <span>🧀 Farm Paneer</span>
-      <span>🍦 Rich Cream</span>
-      <span>🥛 Buttermilk</span>
-      <span>🧈 Lassi</span>
-      <span>🥛 Fresh Milk</span>
-      <span>🧈 Creamy Butter</span>
-      <span>🫙 Pure Ghee</span>
-      <span>🥛 Curd & Yogurt</span>
-      <span>🧀 Farm Paneer</span>
-      <span>🍦 Rich Cream</span>
-      <span>🥛 Buttermilk</span>
-      <span>🧈 Lassi</span>
-    </div>
-  </div>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
